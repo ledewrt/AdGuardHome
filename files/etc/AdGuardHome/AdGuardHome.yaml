@@ -59,8 +59,12 @@ tls:
 filters:
 - enabled: true
   url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
-  name: anti-ad-easylist默认开这一个
+  name: anti-ad-easylist默认开第1个
   id: 1581953052
+- enabled: true
+  url: https://gitee.com/halflife/list/raw/master/ad3.txt
+  name: AdFilters默认开第2个
+  id: 1593095159
 - enabled: false
   url: https://gitlab.com/xuhaiyang1234/AAK-Cont/raw/master/FINAL_BUILD/aak-cont-list-notubo.txt
   name: AAK-Cont Filter For AdBlock, Adblock Plus, etc
@@ -193,7 +197,17 @@ filters:
   url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
   name: uBlock filters -- Unbreak
   id: 1565486411
-user_rules: []
+user_rules:
+- '@@||exp.sug.browser.miui.com^$important'
+- '@@||dj.1688.com^$important'
+- '@@||click.simba.taobao.com^$important'
+- '@@||appsupport.qq.com^$important'
+- '@@||data.bilibili.com^$important'
+- '@@||jumpluna.58.com^$important'
+- '@@||oss-asq-static.11222.cn^$important'
+- '@@||unet.ucweb.com^$important'
+- '@@||kiees.com'
+- '@@||alimama.com'
 dhcp:
   enabled: false
   interface_name: br-lan
