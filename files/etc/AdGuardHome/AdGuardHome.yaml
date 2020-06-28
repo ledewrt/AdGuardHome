@@ -58,7 +58,7 @@ tls:
   private_key_path: ""
 filters:
 - enabled: true
-  url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
+  url: https://gitee.com/privacy-protection-tools/anti-ad/raw/master/easylist.txt
   name: anti-ad-easylist默认开第1个
   id: 1581953052
 - enabled: true
