@@ -61,7 +61,7 @@ filters:
   url: https://gitee.com/privacy-protection-tools/anti-ad/raw/master/easylist.txt
   name: anti-ad-easylist默认开第1个
   id: 1581953052
-- enabled: true
+- enabled: false
   url: https://gitee.com/halflife/list/raw/master/ad3.txt
   name: AdFilters默认开第2个
   id: 1593095159
