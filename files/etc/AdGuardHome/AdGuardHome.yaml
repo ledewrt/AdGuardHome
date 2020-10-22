@@ -1,38 +1,66 @@
 bind_host: 0.0.0.0
 bind_port: 3333
 users: []
+http_proxy: ""
 language: zh-cn
 rlimit_nofile: 61500
+debug_pprof: false
 web_session_ttl: 720
 dns:
   bind_host: 0.0.0.0
   port: 5333
   statistics_interval: 1
   querylog_enabled: false
+  querylog_file_enabled: true
   querylog_interval: 1
-  querylog_memsize: 0
+  querylog_size_memory: 1000
+  anonymize_client_ip: false
   protection_enabled: true
   blocking_mode: default
   blocking_ipv4: ""
   blocking_ipv6: ""
   blocked_response_ttl: 300
+  parental_block_host: family-block.dns.adguard.com
+  safebrowsing_block_host: standard-block.dns.adguard.com
   ratelimit: 0
   ratelimit_whitelist: []
   refuse_any: false
+  upstream_dns:
+  - 114.114.114.114
+  - 222.222.202.202
+  - 222.222.222.222
+  - tcp://114.114.114.114
+  - tcp://222.222.202.202
+  - tcp://222.222.222.222
+  - 8.8.8.8
+  - tcp://8.8.8.8
+  - https://hk-dns.233py.com/dns-query
+  - https://dns.233py.com/dns-query
+  - https://dns10.quad9.net/dns-query
+  - https://dns.supes.top/dns-query
+  - https://cloudflare-dns.com/dns-query
+  - https://dns.google/dns-query
+  - https://dns.twnic.tw/dns-query
+  - https://doh.opendns.com/dns-query
+  - https://dns.rubyfish.cn/dns-query
   bootstrap_dns:
-  - 127.0.0.1:6053
-  all_servers: false
-  edns_client_subnet: false
-  aaaa_disabled: false
+    - 8.8.8.8:53
+  - 119.29.29.29:53
+  - 2620:fe::10
+  - 2620:fe::fe:10
+  all_servers: true
+  fastest_addr: false
   allowed_clients:
   - 127.0.0.1
   disallowed_clients: []
   blocked_hosts: []
-  parental_block_host: family-block.dns.adguard.com
-  safebrowsing_block_host: standard-block.dns.adguard.com
   cache_size: 2000000
-  upstream_dns:
-  - 127.0.0.1:6053
+  cache_ttl_min: 0
+  cache_ttl_max: 0
+  bogus_nxdomain: []
+  aaaa_disabled: false
+  enable_dnssec: false
+  edns_client_subnet: false
   filtering_enabled: true
   filters_update_interval: 24
   parental_enabled: false
@@ -58,13 +86,9 @@ tls:
   private_key_path: ""
 filters:
 - enabled: true
-  url: https://gitee.com/privacy-protection-tools/anti-ad/raw/master/easylist.txt
-  name: anti-ad-easylist默认开第1个
+  url: https://anti-ad.net/easylist.txt
+  name: anti-ad-easylist默认开启的规则
   id: 1581953052
-- enabled: false
-  url: https://gitee.com/halflife/list/raw/master/ad3.txt
-  name: AdFilters默认开第2个
-  id: 1593095159
 - enabled: false
   url: https://gitlab.com/xuhaiyang1234/AAK-Cont/raw/master/FINAL_BUILD/aak-cont-list-notubo.txt
   name: AAK-Cont Filter For AdBlock, Adblock Plus, etc
@@ -197,6 +221,7 @@ filters:
   url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
   name: uBlock filters -- Unbreak
   id: 1565486411
+whitelist_filters: []
 user_rules:
 - '@@||exp.sug.browser.miui.com^$important'
 - '@@||dj.1688.com^$important'
@@ -218,6 +243,11 @@ dhcp:
   lease_duration: 86400
   icmp_timeout_msec: 1000
 clients: []
+log_compress: false
+log_localtime: false
+log_max_backups: 0
+log_max_size: 100
+log_max_age: 3
 log_file: ""
 verbose: false
 schema_version: 6
