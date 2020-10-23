@@ -44,7 +44,7 @@ dns:
   - https://doh.opendns.com/dns-query
   - https://dns.rubyfish.cn/dns-query
   bootstrap_dns:
-    - 8.8.8.8:53
+  - 8.8.8.8:53
   - 119.29.29.29:53
   - 2620:fe::10
   - 2620:fe::fe:10
