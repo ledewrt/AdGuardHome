@@ -86,141 +86,50 @@ tls:
   private_key_path: ""
 filters:
 - enabled: true
-  url: https://anti-ad.net/easylist.txt
-  name: anti-ad-easylist默认开启的规则
-  id: 1581953052
-- enabled: false
-  url: https://gitlab.com/xuhaiyang1234/AAK-Cont/raw/master/FINAL_BUILD/aak-cont-list-notubo.txt
-  name: AAK-Cont Filter For AdBlock, Adblock Plus, etc
-  id: 1565484163
-- enabled: false
-  url: https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt
-  name: AakList (Anti-Adblock Killer)
-  id: 1565484164
-- enabled: false
-  url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt
-  name: CJX's EasyList Lite
-  id: 1565484165
-- enabled: false
-  url: https://easylist-downloads.adblockplus.org/easylistchina.txt
-  name: EasyList China
-  id: 1565484166
-- enabled: false
-  url: https://hosts-file.net/.%5Cad_servers.txt
-  name: hpHosts’ Ad and tracking servers
-  id: 1565484167
-- enabled: false
-  url: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext
-  name: Peter Lowe’s Ad and tracking server list​
-  id: 1565484168
-- enabled: false
-  url: https://easylist.to/easylist/fanboy-social.txt
-  name: Fanboy's Social Blocking List
-  id: 1565484169
-- enabled: false
-  url: https://easylist.to/easylist/fanboy-annoyance.txt
-  name: Fanboy's Annoyance List
-  id: 1565484170
-- enabled: false
-  url: https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
-  name: Fanboy's Cookie List
-  id: 1565484171
-- enabled: false
-  url: https://fanboy.co.nz/fanboy-antifacebook.txt
-  name: Anti-Facebook List
-  id: 1565484172
-- enabled: false
-  url: https://filters.adtidy.org/extension/ublock/filters/14.txt
-  name: AdGuard Annoyances filter
-  id: 1565484173
-- enabled: false
-  url: https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt
-  name: Spam404
-  id: 1565484174
-- enabled: false
-  url: https://gitcdn.xyz/repo/NanoMeow/MDLMirror/master/hosts.txt
-  name: Malware Domain List
-  id: 1565484176
-- enabled: false
-  url: https://www.fanboy.co.nz/enhancedstats.txt
-  name: Fanboy's Enhanced Tracking List
-  id: 1565484178
-- enabled: false
-  url: https://easylist.to/easylist/easyprivacy.txt
-  name: EasyPrivacy
-  id: 1565484179
-- enabled: false
-  url: https://filters.adtidy.org/extension/ublock/filters/3.txt
-  name: AdGuard Tracking Protection filter
-  id: 1565484180
-- enabled: false
-  url: https://easylist.to/easylist/easylist.txt
-  name: EasyList
-  id: 1565484181
-- enabled: false
-  url: https://filters.adtidy.org/extension/ublock/filters/11.txt
-  name: AdGuard Mobile Ads filter
-  id: 1565484182
-- enabled: false
-  url: https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt
-  name: AdGuard Base filter
-  id: 1565484183
-- enabled: false
-  url: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-  name: Adblock Warning Removal List
-  id: 1565484184
-- enabled: false
   url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  name: AdGuard Simplified Domain Names filter
-  id: 1565484185
+  name: AdGuard DNS filter
+  id: 1
 - enabled: false
-  url: http://tools.yiclear.com/ChinaList2.0.txt
-  name: ChinaListV2.0[20190801000]
-  id: 1565484186
+  url: https://block.energized.pro/blu/formats/filter
+  name: Energized Protection Blu
+  id: 1590467081
+- enabled: true
+  url: https://anti-ad.net/easylist.txt
+  name: anti-AD
+  id: 1580820695
+- enabled: true
+  url: http://uujian.cn/browser/txt/metalist.txt
+  name: 荟萃
+  id: 1575015275
+- enabled: true
+  url: https://gitee.com/lhzgl6587/hosts/raw/master/myruler
+  name: 国内手机
+  id: 1584462286
 - enabled: false
-  url: https://fanboy.co.nz/fanboy-problematic-sites.txt
-  name: Fanboy's problematic-sites
-  id: 1565484187
+  url: https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts
+  name: StevenBlack fakenews gambling
+  id: 1577002821
 - enabled: false
-  url: http://sub.adtchrome.com/adt-chinalist-easylist.txt
-  name: ChinaList+EasyList(修正)
-  id: 1565484188
+  url: https://adaway.org/hosts.txt
+  name: AdAway
+  id: 2
 - enabled: false
-  url: https://hosts.nfz.moe/127.0.0.1/full/hosts
-  name: NeoFelhz Hosts
-  id: 1565484189
-- enabled: false
-  url: https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt
-  name: Adbyby Lazy Rule
-  id: 1565484190
-- enabled: false
-  url: https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt
-  name: Adbyby Video Rule
-  id: 1565484191
-- enabled: false
-  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt
-  name: uBlock filters – Resource abuse
-  id: 1565486406
-- enabled: false
-  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
-  name: uBlock filters
-  id: 1565486407
-- enabled: false
-  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
-  name: uBlock filters – Badware risks
-  id: 1565486408
-- enabled: false
-  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt
-  name: uBlock filters – Experimental
-  id: 1565486409
-- enabled: false
-  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
-  name: uBlock filters – Privacy
-  id: 1565486410
-- enabled: false
-  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
-  name: uBlock filters -- Unbreak
-  id: 1565486411
+  url: https://www.malwaredomainlist.com/hostslist/hosts.txt
+  name: MalwareDomainList.com Hosts List
+  id: 4
+- enabled: true
+  url: https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts
+  name: googlehosts
+  id: 1573404421
+- enabled: true
+  url: https://gist.githubusercontent.com/Ewpratten/a25ae63a7200c02c850fede2f32453cf/raw/b9318009399b99e822515d388b8458557d828c37/hosts-yt-ads
+  name: YouTube-AdBlock
+  id: 1584350199
+whitelist_filters:
+- enabled: true
+  url: https://raw.githubusercontent.com/garypang13/dns_whitelist/master/whitelist
+  name: whitelist
+  id: 1586345471
 whitelist_filters: []
 user_rules:
 - '@@||exp.sug.browser.miui.com^$important'
