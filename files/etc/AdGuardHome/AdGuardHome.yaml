@@ -139,6 +139,11 @@ user_rules:
 - '@@||unet.ucweb.com^$important'
 - '@@||kiees.com'
 - '@@||alimama.com'
+- /googleads.$~script,domain=~googleads.github.io
+- /pagead/lvz?
+- '||google.com/pagead/'
+- '||static.doubleclick.net^$domain=youtube.com'
+- '||youtube.com/get_midroll_'
 dhcp:
   enabled: false
   interface_name: br-lan
