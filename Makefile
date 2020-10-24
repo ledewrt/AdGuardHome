@@ -8,41 +8,41 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=adguardhome
+PKG_NAME:=AdGuardHome
 PKG_VERSION:=latest
 PKG_RELEASE:=1
 
 STRIP:=true
 
 ifeq ($(ARCH),i386)
-	PKG_ARCH_ADGUARDHOME:=86
+	PKG_ARCH:=86
 endif
 
 ifeq ($(ARCH),x86_64)
-	PKG_ARCH_ADGUARDHOME:=amd64
+	PKG_ARCH:=amd64
 endif
 
 ifeq ($(ARCH),mipsel)
-	PKG_ARCH_ADGUARDHOME:=mipsle
+	PKG_ARCH:=mipsle
 endif
 
 ifeq ($(ARCH),mips)
-	PKG_ARCH_ADGUARDHOME:=mipsle
+	PKG_ARCH:=mipsle
 endif
 
 ifeq ($(ARCH),arm)
 ifeq ($(BOARD),bcm53xx)
-	PKG_ARCH_ADGUARDHOME:=armv5
+	PKG_ARCH:=armv5
 else ifeq ($(BOARD),kirkwood)
-	PKG_ARCH_ADGUARDHOME:=armv5
+	PKG_ARCH:=armv5
 else
-	PKG_ARCH_ADGUARDHOME:=armv7
+	PKG_ARCH:=armv7
 endif
 endif
 
-PKG_SOURCE:=AdGuardHome_linux_$(PKG_ARCH_ADGUARDHOME).tar.gz
+PKG_SOURCE:=AdGuardHome_linux_$(PKG_ARCH).tar.gz
 PKG_SOURCE_URL:=https://static.adguard.com/adguardhome/beta/
-PKG_BUILD_DIR:=$(BUILD_DIR)/AdGuardHome_linux_$(PKG_ARCH_ADGUARDHOME)
+PKG_BUILD_DIR:=$(BUILD_DIR)/AdGuardHome_linux_$(PKG_ARCH)
 PKG_HASH:=skip
 
 include $(INCLUDE_DIR)/package.mk
