@@ -8,7 +8,7 @@ debug_pprof: false
 web_session_ttl: 720
 dns:
   bind_host: 0.0.0.0
-  port: 5335
+  port: 54
   statistics_interval: 1
   querylog_enabled: false
   querylog_file_enabled: true
@@ -89,7 +89,7 @@ filters:
   url: https://cdn.jsdelivr.net/gh/banbendalao/ADgk@latest/ADgk.txt
   name: 国内手机
   id: 1584462286
-  - enabled: true
+- enabled: true
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
   name: 乘风视频
   id: 1603860852
