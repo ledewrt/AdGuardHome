@@ -83,15 +83,15 @@ filters:
   url: https://gitee.com/halflife/list/raw/master/ad.txt
   name: HalfLife整合规则
   id: 1603860858
-- enabled: true
+- enabled: false
   url: https://cdn.jsdelivr.net/gh/banbendalao/ADgk@latest/ADgk.txt
   name: 国内手机
   id: 1584462286
-- enabled: true
+- enabled: false
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
   name: 乘风视频
   id: 1603860852
-- enabled: true
+- enabled: false
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
   name: 乘风广告
   id: 1603860853
